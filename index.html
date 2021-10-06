@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="ptBR">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="https://kit.fontawesome.com/350bfdf4e4.js" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="css/index.css">
+        <title>coStatus</title>
+    </head>
+    <body>
+        <input type="checkbox" id="dark">
+        <div class="dark">
+            <label for="#" id="dBox"><i class="fas fa-adjust"></i></label>
+        </div>
+        <div class="main">
+            <div class="header">
+                <span>
+                    <span>co</span><!--
+                    --><span class="b">STATUS</span><!--
+                    --><span id="virus"><i class="fas fa-virus"></i></span>
+                </span>
+            </div>
+
+            <div class="content">
+                <form action="coStatus.html" class="form">
+                    <select name="estado" id="estado">
+                        <option value="estado">Estado</option>
+                    </select>
+                    <select name="cidade" id="cidade" disabled>
+                        <option>Escolha o estado...</option>
+                    </select>
+                    <button ><i class="fas fa-search"></i></button>
+                </form>
+            </div>
+        </div>
+
+        <div id="loading">
+            <div class="bar">
+                <div class="bar-item"></div>
+                <div class="bar-item"></div>
+                <div class="bar-item"></div>
+                <div class="bar-item"></div>
+                <div class="bar-item"></div>
+                <div class="bar-item"></div>
+                <div class="bar-item"></div>
+                <div class="bar-item"></div>
+            </div>
+        </div>
+
+        <div class="footer">coStatus 2020 - Dados não oficiais</div>
+        <script src="js/darkMode.js"></script>
+        <script src="js/animation.js"></script>
+        <script src="js/index.js"></script>
+    </body>
+</html>

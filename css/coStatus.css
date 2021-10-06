@@ -1,0 +1,198 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    border: 0;
+    outline: 0;
+    user-select: none;
+    font-size: 100%;
+    font-family: 'Montserrat', sans-serif;
+}
+
+body {
+    background: #ecf0f1;
+    overflow: hidden;
+}
+
+.main {
+    height: 100vh;
+    display: grid;
+    grid-template-rows: 8.8% 90%;
+}
+
+.main > .menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 15px;
+    font-size: 1.5em;
+    line-height: 1.5em;
+    margin: 40px 40px 0 40px;
+}
+
+.main > .menu > button {
+    background: transparent;
+    cursor: pointer;
+    color: #1e272e;
+}
+
+.main > .menu > label {
+    background: transparent;
+    cursor: pointer;
+    color: #1e272e;
+}
+
+.main > .menu > button:nth-child(2) > span:nth-child(1), .main > .menu > button:nth-child(2) > span:nth-child(3) {
+    color: #2ecc71;
+}
+
+.main > .content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-column-gap: 20px;
+    align-content: center;
+}
+
+.main > .content > .box-a {
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    justify-content: end;
+}
+
+.main > .content > .box-a > .cidade {
+    align-self: end;
+    font-size: 2em;
+    color: #1e272e;
+    text-align: end;
+}
+
+.main > .content > .box-a > .cidade > span > span:nth-child(1) {
+    cursor: pointer;
+}
+
+.main > .content > .box-a > .data {
+    align-self: start;
+    font-size: 1.4em;
+    color: #1e272e;
+    text-align: end;
+}
+
+.main > .content > .box-b {
+    display: grid;
+    grid-row-gap: 1em;
+    color: #1e272e;
+}
+
+.main > .content > .box-b > div > span {
+    display: inline-flex;
+}
+
+.main > .content > .box-b > div > span > span:nth-child(1) {
+    font-size: 2.5em;
+    margin-right: 20px;
+    align-self: center;
+}
+
+.main > .content > .box-b > div > span > span:nth-child(2) {
+    font-size: 1.5em;
+    margin-right: 15px;
+    align-self: center;
+}
+
+.main > .content > .box-b > div > span > span:nth-child(3) {
+    font-size: 2em;
+    margin-right: 20px;
+    align-self: center;
+}
+
+.main > .content > .box-b > div > span > span:nth-child(4) {
+    font-size: 1.5em;
+    align-self: center;
+}
+
+.populacao > span {
+    background: #2ecc71;
+    padding: 5px 20px;
+    border-radius: 100px 100px 100px 0;
+    color: #ecf0f1;
+}
+
+.suspeita > span {
+    background: #f1c40f;
+    padding: 5px 20px;
+    border-radius: 5px 100px 100px 10px;
+    color: #ecf0f1;
+}
+
+.confirmado > span {
+    background: #9b59b6;
+    padding: 5px 20px;
+    border-radius: 10px 100px 100px 10px;
+    color: #ecf0f1;
+}
+
+.morte > span {
+    background: #e74c3c;
+    padding: 5px 20px;
+    border-radius: 10px 100px 100px 100px;
+    color: #ecf0f1;
+}
+
+/* DARK MODE */
+
+#dark {
+    display: none;
+}
+
+#dark:checked ~ .main {
+    background: #1e272e;
+}
+
+#dark:checked ~ .main > .menu > button {
+    color: #ecf0f1;
+}
+
+#dark:checked ~ .main > .menu > label {
+    color: #ecf0f1;
+}
+
+#dark:checked ~ .main > .content > .box-a > .cidade > span > span {
+    color: #ecf0f1;
+}
+
+#dark:checked ~ .main > .content > .box-a > .data > span {
+    color: #ecf0f1;
+}
+
+#dark:checked ~ .main > .content > .box-b > div:nth-child(1) > span {
+    background: #27ae60;
+}
+
+#dark:checked ~ .main > .content > .box-b > div:nth-child(2) > span {
+    background: #f39c12;
+}
+
+#dark:checked ~ .main > .content > .box-b > div:nth-child(3) > span {
+    background: #8e44ad;
+}
+
+#dark:checked ~ .main > .content > .box-b > div:nth-child(4) > span {
+    background: #c0392b;
+}
+
+#dark:checked ~ .footer {
+    color: #ecf0f1;
+}
+
+/* FOOTER */
+
+.footer {
+    position: absolute;
+    bottom: 15px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 0.8em;
+    color: #1e272e;
+}
